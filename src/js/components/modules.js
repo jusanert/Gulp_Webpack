@@ -124,7 +124,8 @@ export function addFixedHeader() {
 //---Burger Menu
 export function menuInit() {
 	let burger = document.querySelector('.menu-icon');
-	let menu = document.querySelector('.menu');
+  let menu = document.querySelector('.menu');
+  let body = document.body
 
 	if (burger && menu) {
 		burger.onclick = () => {
