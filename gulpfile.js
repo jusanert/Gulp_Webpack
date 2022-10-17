@@ -29,7 +29,8 @@ browsersync.create();
 
 const scss = gulpSass(dartSass)
 
-let projectName = `${path.basename(path.resolve())}`;
+// let projectName = `${path.basename(path.resolve())}`;
+let projectName = `build`;
 const srcFolder = "src";
 const { src, dest, watch } = gulp;
 
