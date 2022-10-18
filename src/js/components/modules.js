@@ -1035,7 +1035,6 @@ export function initCountdown(parent, to) {
 }
 
 //---Theme switcher
-
 export function initSwitcher() {
 	const switcher = document.querySelector('.switcher');
 

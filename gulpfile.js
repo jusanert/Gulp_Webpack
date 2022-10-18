@@ -313,12 +313,12 @@ function watchFiles() {
 
 let fontsBuild = gulp.series(fonts, fontStyle);
 let dev = gulp.series(clean, gulp.parallel(html, fonts, js, images, icons, assets), fontStyle, css, watchFiles);
-let build = gulp.series(cleanDir, gulp.parallel(html, jsDev, js, fonts, imagesBuild, icons, assets), css);
-let buildNoWebp = gulp.series(cleanDir, gulp.parallel(htmlWebp, jsDev, js, fonts, imagesWebp, icons, assets), cssWebp);
+let buildNoWebp = gulp.series(cleanDir, gulp.parallel(html, jsDev, js, fonts, imagesBuild, icons, assets), css);
+let build = gulp.series(cleanDir, gulp.parallel(htmlWebp, jsDev, js, fonts, imagesWebp, icons, assets), cssWebp);
 
 gulp.task('clean', cleanDir)
 gulp.task('fonts', fontsBuild);
 
 gulp.task('default', dev);
-gulp.task('build', build);
 gulp.task('buildNoWebp', buildNoWebp);
+gulp.task('build', build);
