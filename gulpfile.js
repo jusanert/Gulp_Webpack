@@ -151,7 +151,7 @@ function imagesWebp() {
 		.pipe(
 			imagemin([
 				webp({
-					quality: 85
+					quality: 70
 				})
 			])
 		)
